@@ -66,3 +66,11 @@ Key features include:
 7. Talk to your document: ask questions and get answers.
 
 ---
+**Screenshot(s)**
+
+<div align="center">
+  <img src="https://github.com/gunjitsinha/rag-document-chatbot/blob/main/data/rag-chat-ui.png" >
+  <figcaption>Landing page UI.</figcaption>
+</div>
+
+---

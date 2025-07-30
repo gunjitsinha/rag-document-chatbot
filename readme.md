@@ -11,11 +11,11 @@ It allows any user to:
 
 - **Securely upload their own PDF, DOCX, or TXT documents** (never seen by other users)
 - **Chat with an advanced AI assistant** that can answer questions using knowledge extracted from these documents
-- **Ask follow-up questions** just like in a real conversation—the app will rephrase and clarify so context is always correct!
+- **Ask follow-up questions** just like in a real conversation, the app will rephrase and clarify so context is always correct!
 - **Try an instant “Demo mode”** with a built-in knowledge snippet (even with zero uploads)
 - Download their chat history at any time
 
-All of this runs in your web browser with zero setup—no local Python needed!
+All of this runs in your web browser with zero setup, no local Python needed!
 
 ---
 
@@ -35,36 +35,18 @@ All of this runs in your web browser with zero setup—no local Python needed!
 - **Frontend/UI:** Streamlit chat UI for smooth user interaction.
 - **Document Parsing:** LangChain community loaders for TXT, PDF, DOCX.
 - **Chunking & Embedding:** Fast local embedding via `sentence-transformers/all-MiniLM-L6-v2`.
-- **Vector Storage:** In-memory ChromaDB per user session for similarity search (never persisted on disk—privacy by design).
+- **Vector Storage:** In-memory ChromaDB per user session for similarity search (never persisted on disk, privacy by design).
 - **Language Model (Q&A):** Responses powered by a state-of-the-art, cloud-hosted LLM (e.g. [MoonshotAI Kimi-K2-Instruct](https://huggingface.co/moonshotai/Kimi-K2-Instruct)) via the Hugging Face Inference API.
-- **Session/state:** Strict isolation per user/session—no data cross-contamination, guaranteed.
-
----
-
-## Installation & Running Locally
-
-1. Clone this repo and install requirements:
-    ```
-    pip install -r requirements.txt
-    ```
-2. Set your Hugging Face API token in a `.env` file:
-    ```
-    HF_TOKEN=your_huggingface_token
-    ```
-3. Start the app:
-    ```
-    streamlit run app.py
-    ```
-4. (Recommended) Deploy to [Streamlit Cloud](https://share.streamlit.io) for sharing!
+- **Session/state:** Strict isolation per user/session, no data cross-contamination, guaranteed.
 
 ---
 
 ## Demo Limitations & Notes
 
-- **Speed:** Model loading and first LLM answer may take 10–30s—very normal for open RAG demos using real embeddings and cloud APIs.
+- **Speed:** Model loading and first LLM answer may take 10–30s, very normal for open RAG demos using real embeddings and cloud APIs.
 - **File Limits:** Files must be .txt, .pdf, or .docx (max 2MB each, up to 30,000 total characters per session).
-- **Session Lifetime:** Sessions are wiped on page reload, reset, or user tab close—for privacy, not for persistence.
-- **No “real” cross-user chat:** Each user is isolated—great for privacy, but not for multiplayer chatrooms.
+- **Session Lifetime:** Sessions are wiped on page reload, reset, or user tab close, for privacy, not for persistence.
+- **No “real” cross-user chat:** Each user is isolated, great for privacy, but not for multiplayer chatrooms.
 - **Cloud API:** All LLM completions are performed using Hugging Face’s inference API as configured; usage is subject to your account’s quota.
 
 ---

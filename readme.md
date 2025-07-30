@@ -2,7 +2,10 @@
 
 **An App for Exploring Retrieval-Augmented Generation on Your Own Docs**
 
-![Streamlit RAG Chatbot UI Screenshot](data/rag-chat-ui.png)
+<div align="center">
+  <img src="https://github.com/gunjitsinha/rag-document-chatbot/blob/main/data/app-architechture.png" >
+  <figcaption>RAG architecture.</figcaption>
+</div>
 
 ## 🚀 Project Overview
 

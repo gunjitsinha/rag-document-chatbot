@@ -1,0 +1,12 @@
+[theme]
+primaryColor = "#66C2FF"            # light blue accent (buttons, links)
+backgroundColor = "#0B1220"         # deep dark blue / almost black background
+secondaryBackgroundColor = "#0F1A2B" # slightly lighter panel background
+textColor = "#E6EEF3"               # pale text for readability
+font = "sans serif"
+
+[client]
+showErrorDetails = true
+
+[logger]
+level = "info"

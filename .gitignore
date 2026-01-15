@@ -1,0 +1,39 @@
+# Virtualenvs / envs
+chatbot2/
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Streamlit/IDE/editor
+/.streamlit/local*.*
+.vscode/
+.idea/
+
+# Local app data / uploads / indexes
+input_data/
+data/faiss_index/
+faiss_index/
+*.sqlite3
+*.db
+
+# Logs, tests, builds
+*.log
+dist/
+build/
+*.egg-info/
+
+# Secrets
+.env
